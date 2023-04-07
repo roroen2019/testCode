@@ -433,7 +433,7 @@ final class CustomApi {
     ///   - address:  실제 주소지
     func getAddressAPI(page:Int, address:String, completion: @escaping (resultType, Any, Int) -> Void){
         
-        let confirmKey = "U01TX0FVVEgyMDIyMDYwNzE2MzEyMjExMjY1NzA=" //주소제공 검색 API
+        let confirmKey = "주소API" //주소제공 검색 API
         
         var parameters = Dictionary<String,Any>()
         parameters["confmKey"] = confirmKey
