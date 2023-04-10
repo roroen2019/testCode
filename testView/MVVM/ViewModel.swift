@@ -5,7 +5,8 @@
 //  Created by myPuppy on 2023/03/17.
 //
 /*
- viewController에 데이터를 전달하는 역할
+ 곰튀김
+ MVVMViewController에 데이터를 전달하는 역할
  동작하는 코드들은 서비스에 있으니 서비스를 선언한다.
  
  */

@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController {
     
     // 셀 제목
-    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2"]
+    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간"]
     
     // 테이블뷰
     private let mainTableView: UITableView = {
@@ -65,6 +65,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             viewController = RxSwiftViewController()
         case 3:
             viewController = MVVM2ViewController()
+        case 4:
+            viewController = GomRxSwiftViewController()
         default:
             return
         }

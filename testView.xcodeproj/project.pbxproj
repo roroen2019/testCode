@@ -25,6 +25,7 @@
 		D1F5519929DA953A00E859FA /* ViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519829DA953A00E859FA /* ViewModel2.swift */; };
 		D1F5519B29DA98AF00E859FA /* Service2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519A29DA98AF00E859FA /* Service2.swift */; };
 		D1F5519D29DA98D700E859FA /* Model2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519C29DA98D700E859FA /* Model2.swift */; };
+		D1F5519F29DFB25C00E859FA /* GomRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519E29DFB25C00E859FA /* GomRxSwiftViewController.swift */; };
 		D1F5E0E629CD712600904D06 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D1F5E0E529CD712600904D06 /* RxCocoa */; };
 		D1F5E0E829CD712600904D06 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D1F5E0E729CD712600904D06 /* RxRelay */; };
 		D1F5E0EA29CD712600904D06 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1F5E0E929CD712600904D06 /* RxSwift */; };
@@ -59,6 +60,7 @@
 		D1F5519829DA953A00E859FA /* ViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel2.swift; sourceTree = "<group>"; };
 		D1F5519A29DA98AF00E859FA /* Service2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service2.swift; sourceTree = "<group>"; };
 		D1F5519C29DA98D700E859FA /* Model2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model2.swift; sourceTree = "<group>"; };
+		D1F5519E29DFB25C00E859FA /* GomRxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GomRxSwiftViewController.swift; sourceTree = "<group>"; };
 		D1F9B0AA29C9488B007D4CBD /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		D1F9B0AC29C9734D007D4CBD /* nomalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nomalTableViewCell.swift; sourceTree = "<group>"; };
 		D1F9B0AD29C9734D007D4CBD /* nomalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = nomalTableViewCell.xib; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				D1FB238429D12F500088CB0A /* RxSwiftViewController.swift */,
 				D1FB238729D585210088CB0A /* IosAcademyViewController.swift */,
 				D1F5519529DA933200E859FA /* MVVM2ViewController.swift */,
+				D1F5519E29DFB25C00E859FA /* GomRxSwiftViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				D1F9B0AB29C9488B007D4CBD /* testViewController.swift in Sources */,
 				D1ACA13729C442B7009AAA3A /* MVVMViewController.swift in Sources */,
 				D1ACA12F29C44088009AAA3A /* CustomAPI.swift in Sources */,
+				D1F5519F29DFB25C00E859FA /* GomRxSwiftViewController.swift in Sources */,
 				D1ACA12A29C065C1009AAA3A /* shadowLayerView.swift in Sources */,
 				D1F5519629DA933200E859FA /* MVVM2ViewController.swift in Sources */,
 				D1FB238829D585210088CB0A /* IosAcademyViewController.swift in Sources */,

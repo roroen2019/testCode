@@ -5,7 +5,7 @@
 //  Created by myPuppy on 2023/03/17.
 //
 /*
- 1.mvvm 테스트 https://www.youtube.com/watch?v=M58LqynqQHc
+ 1.mvvm 테스트 곰튀김 https://www.youtube.com/watch?v=M58LqynqQHc
  2.프리뷰 적용해보기
  
  정리

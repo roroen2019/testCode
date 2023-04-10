@@ -67,10 +67,7 @@ class RxSwiftViewController: UIViewController {
     
     private func bindTableData(){
         // 테이블뷰에 아이템을 바인드 한다.
-        viewModel.items.bind(to: tableView.rx.items(
-            cellIdentifier: "cell",
-            cellType: UITableViewCell.self)
-        ) { row, model, cell in
+        viewModel.items.bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { row, model, cell in
             cell.textLabel?.text = model.title
             cell.imageView?.image = UIImage(systemName: model.imageName)
         }.disposed(by: bag)
