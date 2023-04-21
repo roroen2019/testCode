@@ -1,8 +1,8 @@
-# myTestApp
+# 테스트코드 모음
 
 
 
-## Getting started
+## 내용
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
