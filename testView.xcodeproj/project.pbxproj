@@ -21,6 +21,17 @@
 		D1ACA13529C4415F009AAA3A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA13429C4415F009AAA3A /* ViewModel.swift */; };
 		D1ACA13729C442B7009AAA3A /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA13629C442B7009AAA3A /* MVVMViewController.swift */; };
 		D1ACA13929C4450A009AAA3A /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA13829C4450A009AAA3A /* Extention.swift */; };
+		D1F1EAC629E4E786006C0B2F /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAC529E4E786006C0B2F /* OneViewController.swift */; };
+		D1F1EAC829E4F6AE006C0B2F /* OneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAC729E4F6AE006C0B2F /* OneViewModel.swift */; };
+		D1F1EACA29E4F8F1006C0B2F /* OneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAC929E4F8F1006C0B2F /* OneService.swift */; };
+		D1F1EACC29E4F926006C0B2F /* OneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EACB29E4F926006C0B2F /* OneAPI.swift */; };
+		D1F1EACF29E4FCB2006C0B2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1F1EACE29E4FCB2006C0B2F /* Alamofire */; };
+		D1F1EAD129E4FDAA006C0B2F /* OneServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAD029E4FDAA006C0B2F /* OneServerModel.swift */; };
+		D1F1EAD329E4FF7E006C0B2F /* OneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAD229E4FF7E006C0B2F /* OneModel.swift */; };
+		D1F1EAD629E53125006C0B2F /* AdoptCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAD529E53125006C0B2F /* AdoptCollectionViewCell.swift */; };
+		D1F1EAE129E7D078006C0B2F /* GomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAE029E7D078006C0B2F /* GomLoginViewController.swift */; };
+		D1F1EAE429E7D6D9006C0B2F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D1F1EAE329E7D6D9006C0B2F /* SnapKit */; };
+		D1F1EAE629E920EE006C0B2F /* PreviewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAE529E920EE006C0B2F /* PreviewTestViewController.swift */; };
 		D1F5519629DA933200E859FA /* MVVM2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519529DA933200E859FA /* MVVM2ViewController.swift */; };
 		D1F5519929DA953A00E859FA /* ViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519829DA953A00E859FA /* ViewModel2.swift */; };
 		D1F5519B29DA98AF00E859FA /* Service2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F5519A29DA98AF00E859FA /* Service2.swift */; };
@@ -56,6 +67,15 @@
 		D1ACA13629C442B7009AAA3A /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		D1ACA13829C4450A009AAA3A /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		D1E41DD7594D112395052501 /* Pods-testView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testView.debug.xcconfig"; path = "Target Support Files/Pods-testView/Pods-testView.debug.xcconfig"; sourceTree = "<group>"; };
+		D1F1EAC529E4E786006C0B2F /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		D1F1EAC729E4F6AE006C0B2F /* OneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewModel.swift; sourceTree = "<group>"; };
+		D1F1EAC929E4F8F1006C0B2F /* OneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneService.swift; sourceTree = "<group>"; };
+		D1F1EACB29E4F926006C0B2F /* OneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAPI.swift; sourceTree = "<group>"; };
+		D1F1EAD029E4FDAA006C0B2F /* OneServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneServerModel.swift; sourceTree = "<group>"; };
+		D1F1EAD229E4FF7E006C0B2F /* OneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneModel.swift; sourceTree = "<group>"; };
+		D1F1EAD529E53125006C0B2F /* AdoptCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1F1EAE029E7D078006C0B2F /* GomLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GomLoginViewController.swift; sourceTree = "<group>"; };
+		D1F1EAE529E920EE006C0B2F /* PreviewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTestViewController.swift; sourceTree = "<group>"; };
 		D1F5519529DA933200E859FA /* MVVM2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM2ViewController.swift; sourceTree = "<group>"; };
 		D1F5519829DA953A00E859FA /* ViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel2.swift; sourceTree = "<group>"; };
 		D1F5519A29DA98AF00E859FA /* Service2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service2.swift; sourceTree = "<group>"; };
@@ -74,8 +94,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1F5E0E829CD712600904D06 /* RxRelay in Frameworks */,
+				D1F1EACF29E4FCB2006C0B2F /* Alamofire in Frameworks */,
 				D1F5E0E629CD712600904D06 /* RxCocoa in Frameworks */,
 				D1F5E0EA29CD712600904D06 /* RxSwift in Frameworks */,
+				D1F1EAE429E7D6D9006C0B2F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +142,7 @@
 		D1ACA11329C0655F009AAA3A /* testView */ = {
 			isa = PBXGroup;
 			children = (
+				D1F1EAC429E4E760006C0B2F /* Convert */,
 				D1ACA12B29C43E9A009AAA3A /* App */,
 				D1ACA12829C0659D009AAA3A /* CustomView */,
 				D1F9B0B029C9753F007D4CBD /* MVVM */,
@@ -151,6 +174,28 @@
 				D1ACA11629C0655F009AAA3A /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D1F1EAC429E4E760006C0B2F /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				D1F1EAD429E530F1006C0B2F /* Cell */,
+				D1F1EAC529E4E786006C0B2F /* OneViewController.swift */,
+				D1F1EAC729E4F6AE006C0B2F /* OneViewModel.swift */,
+				D1F1EAC929E4F8F1006C0B2F /* OneService.swift */,
+				D1F1EACB29E4F926006C0B2F /* OneAPI.swift */,
+				D1F1EAD029E4FDAA006C0B2F /* OneServerModel.swift */,
+				D1F1EAD229E4FF7E006C0B2F /* OneModel.swift */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		D1F1EAD429E530F1006C0B2F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1F1EAD529E53125006C0B2F /* AdoptCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D1F5519729DA952100E859FA /* MVVM2 */ = {
@@ -185,6 +230,8 @@
 				D1FB238729D585210088CB0A /* IosAcademyViewController.swift */,
 				D1F5519529DA933200E859FA /* MVVM2ViewController.swift */,
 				D1F5519E29DFB25C00E859FA /* GomRxSwiftViewController.swift */,
+				D1F1EAE029E7D078006C0B2F /* GomLoginViewController.swift */,
+				D1F1EAE529E920EE006C0B2F /* PreviewTestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,6 +257,8 @@
 				D1F5E0E529CD712600904D06 /* RxCocoa */,
 				D1F5E0E729CD712600904D06 /* RxRelay */,
 				D1F5E0E929CD712600904D06 /* RxSwift */,
+				D1F1EACE29E4FCB2006C0B2F /* Alamofire */,
+				D1F1EAE329E7D6D9006C0B2F /* SnapKit */,
 			);
 			productName = testView;
 			productReference = D1ACA11129C0655F009AAA3A /* testView.app */;
@@ -241,6 +290,8 @@
 			mainGroup = D1ACA10829C0655F009AAA3A;
 			packageReferences = (
 				D1F5E0E429CD712600904D06 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D1F1EACD29E4FCB2006C0B2F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D1F1EAE229E7D6D9006C0B2F /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = D1ACA11229C0655F009AAA3A /* Products */;
 			projectDirPath = "";
@@ -299,22 +350,31 @@
 				D1F9B0AE29C9734D007D4CBD /* nomalTableViewCell.swift in Sources */,
 				D1ACA13529C4415F009AAA3A /* ViewModel.swift in Sources */,
 				D1ACA11929C0655F009AAA3A /* ViewController.swift in Sources */,
+				D1F1EAD129E4FDAA006C0B2F /* OneServerModel.swift in Sources */,
+				D1F1EAE629E920EE006C0B2F /* PreviewTestViewController.swift in Sources */,
 				D1ACA11529C0655F009AAA3A /* AppDelegate.swift in Sources */,
 				D1ACA12D29C43FE9009AAA3A /* SeverModel.swift in Sources */,
 				D1ACA13329C4414C009AAA3A /* Service.swift in Sources */,
 				D1F9B0AB29C9488B007D4CBD /* testViewController.swift in Sources */,
 				D1ACA13729C442B7009AAA3A /* MVVMViewController.swift in Sources */,
+				D1F1EAE129E7D078006C0B2F /* GomLoginViewController.swift in Sources */,
 				D1ACA12F29C44088009AAA3A /* CustomAPI.swift in Sources */,
 				D1F5519F29DFB25C00E859FA /* GomRxSwiftViewController.swift in Sources */,
 				D1ACA12A29C065C1009AAA3A /* shadowLayerView.swift in Sources */,
+				D1F1EAC629E4E786006C0B2F /* OneViewController.swift in Sources */,
 				D1F5519629DA933200E859FA /* MVVM2ViewController.swift in Sources */,
+				D1F1EACA29E4F8F1006C0B2F /* OneService.swift in Sources */,
 				D1FB238829D585210088CB0A /* IosAcademyViewController.swift in Sources */,
 				D1ACA13929C4450A009AAA3A /* Extention.swift in Sources */,
 				D1F5519929DA953A00E859FA /* ViewModel2.swift in Sources */,
 				D1F5519D29DA98D700E859FA /* Model2.swift in Sources */,
+				D1F1EACC29E4F926006C0B2F /* OneAPI.swift in Sources */,
 				D1FB238529D12F500088CB0A /* RxSwiftViewController.swift in Sources */,
 				D1F5519B29DA98AF00E859FA /* Service2.swift in Sources */,
 				D1ACA11729C0655F009AAA3A /* SceneDelegate.swift in Sources */,
+				D1F1EAD329E4FF7E006C0B2F /* OneModel.swift in Sources */,
+				D1F1EAD629E53125006C0B2F /* AdoptCollectionViewCell.swift in Sources */,
+				D1F1EAC829E4F6AE006C0B2F /* OneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +598,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D1F1EACD29E4FCB2006C0B2F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		D1F1EAE229E7D6D9006C0B2F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		D1F5E0E429CD712600904D06 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -549,6 +625,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D1F1EACE29E4FCB2006C0B2F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1F1EACD29E4FCB2006C0B2F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D1F1EAE329E7D6D9006C0B2F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1F1EAE229E7D6D9006C0B2F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		D1F5E0E529CD712600904D06 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D1F5E0E429CD712600904D06 /* XCRemoteSwiftPackageReference "RxSwift" */;

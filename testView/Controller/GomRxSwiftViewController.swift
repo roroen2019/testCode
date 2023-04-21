@@ -79,7 +79,30 @@ class GomRxSwiftViewController: UIViewController {
         return button
     }()
     
+    // 이미지뷰
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
     
+    // exJust
+    private let exJustButton3: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("exJust3", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
+    
+    // exlogin
+    private let exLoginButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("exLogin", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
     
     
     
@@ -143,6 +166,29 @@ extension GomRxSwiftViewController {
         exMapButton3.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         exMapButton3.heightAnchor.constraint(equalToConstant: 50).isActive = true
         exMapButton3.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        exMapButton3.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        self.view.addSubview(imageView)
+        imageView.topAnchor.constraint(equalTo: self.exMapButton3.bottomAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.backgroundColor = .lightGray
+        
+        self.view.addSubview(exJustButton3)
+        exJustButton3.topAnchor.constraint(equalTo: self.imageView.bottomAnchor).isActive = true
+        exJustButton3.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        exJustButton3.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        exJustButton3.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        exJustButton3.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        self.view.addSubview(exLoginButton)
+        exLoginButton.topAnchor.constraint(equalTo: self.exJustButton3.bottomAnchor).isActive = true
+        exLoginButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        exLoginButton.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        exLoginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        exLoginButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
         
     }
     
@@ -151,6 +197,9 @@ extension GomRxSwiftViewController {
     // from: 값을 하나하나 내려보내는 방식
     // map: 입력된 값을 가공하는 부분
     // filter: 안의 조건식이 true일 경우에 값을 다음으로 보낸다.
+    // subscribe: 최종값을 사용하겠다. 외부와 연결가능한곳1
+    // obser
+    // do: 외부와 연결가능한곳2
     @objc private func buttonAction(_ sender:UIButton){
         switch sender {
         case exJustButton1:
@@ -194,6 +243,46 @@ extension GomRxSwiftViewController {
             
         case exMapButton3:
             print("exmap3")
+            Observable.just("800x600")
+                .observe(on: ConcurrentDispatchQueueScheduler(qos: .default)) // 이 다음 실행되는 스트림은 컨커런트스케쥴러로 실행한다(메인스레드에서 실행안한다는 뜻), qos:우선순위
+                .map { $0.replacingOccurrences(of: "x", with: "/") } //"800x600"값에서 x를 /로 변경함
+                .map { "http://picsum.photos/\($0)/?random" } //위에서 변경된 "800/600"값을 스트링 사이에 넣는다.
+                .map { URL(string: $0) } //스트링을 URL로 변경한다.
+                .filter { $0 != nil } //URL값을 확인해서 닐이 아닐경우에 다음으로 진행한다.
+                .map { $0! } //위에서 내려온 값이 옵셔널이라서 강제언레핑으로 옵셔널을 해제한다.
+                .map { try Data(contentsOf: $0) } //URL을 데이터로 변환
+                .map { UIImage(data: $0) } //데이터를 UIimage타입으로 변환
+//                .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .default)) //subscribe(on) 은 첫줄부터 스케줄러를 적용하기위해서 사용한다. 위치는 어디에 있든 상관없음
+                .observe(on: MainScheduler.instance) // 다음 스트림부터는 메인스레드로 동작
+                .do()
+                .subscribe { image in
+                    // 외부와 연결되는 부분
+                    self.imageView.image = image
+                }.disposed(by: disposeBag)
+            
+        case exJustButton3:
+            print("exjust")
+            Observable.from(["hello world", "test", 1, "2222"])
+//                .single()
+                .subscribe { event in
+                    switch event {
+                    case .next(let str):
+                        print("next: \(str)")
+                        break
+                    case .error(let err):
+                        print("error: \(err)")
+                        break
+                    case .completed:
+                        print("completed")
+                        break
+                    }
+                }
+                .disposed(by: disposeBag)
+            
+        case exLoginButton:
+            print("exLogin")
+            let login = GomLoginViewController()
+            self.present(login, animated: true)
             
             
         default:

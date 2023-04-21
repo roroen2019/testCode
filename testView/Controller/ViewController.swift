@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController {
     
     // 셀 제목
-    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간"]
+    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간", "레거시->mvvm변경"]
     
     // 테이블뷰
     private let mainTableView: UITableView = {
@@ -43,8 +43,8 @@ extension ViewController {
         mainTableView.register(nomalTableViewCell.nib(), forCellReuseIdentifier: nomalTableViewCell.identifier)
         mainTableView.delegate = self
         mainTableView.dataSource = self
-        mainTableView.estimatedRowHeight = 50 //기본높이
-        mainTableView.rowHeight = UITableView.automaticDimension //유동적
+//        mainTableView.estimatedRowHeight = 50 //기본높이
+//        mainTableView.rowHeight = UITableView.automaticDimension //유동적
     }
     
 }
@@ -67,6 +67,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             viewController = MVVM2ViewController()
         case 4:
             viewController = GomRxSwiftViewController()
+        case 5:
+            viewController = OneViewController()
         default:
             return
         }
@@ -88,6 +90,14 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         cell.configure(title: title)
         
         return cell
+    }
+    
+//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 50
+//    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
     
     
