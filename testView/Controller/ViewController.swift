@@ -11,8 +11,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     // 셀 제목
-    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간", "레거시->mvvm변경"]
+    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간", "레거시->mvvm변경", "lifeCycle테스트"]
     
     // 테이블뷰
     private let mainTableView: UITableView = {
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("viewDidLoad 동작")
         setupView()
+        shareTest()
     }
     
 }
@@ -47,6 +49,28 @@ extension ViewController {
 //        mainTableView.rowHeight = UITableView.automaticDimension //유동적
     }
     
+    
+    private func shareTest(){
+        var class1 = ShareTest()
+        var class2 = class1
+        var class3 = class1
+        
+        class3.value1 = "세번째"
+        
+        print("테스트값 확인:\(class1.value1)") //테스트값 확인:세번째
+        // 클래스의 인스턴스를 연결하고 사용하면 해당클래스의 값이 변경된다. 클래스는 참조
+        
+        
+        var struct1 = ShareStruct()
+        var struct2 = struct1
+        var struct3 = struct1
+        
+        struct3.value1 = "세번째 스트럭트"
+        
+        print("스트럭트 확인:\(struct1.value1)") //스트럭트 확인:
+        // 구조체는 연결해도 적용이 안된다. 즉 개별적이다. 스트럭트는 값
+        
+    }
 }
 
 //MARK: - 테이블뷰 델리게이트
@@ -69,6 +93,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             viewController = GomRxSwiftViewController()
         case 5:
             viewController = OneViewController()
+        case 6:
+            viewController = LifeCycleViewController()
         default:
             return
         }

@@ -12,6 +12,7 @@ import UIKit
 class testViewController: UIViewController {
 
     
+    
     private let scrollView: UIScrollView = {
         let view = UIScrollView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +43,8 @@ class testViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        // Do any additional setup after loading the view.
+        print("공유값 확인:\(ShareTest().value1)")
+        
     }
     
 

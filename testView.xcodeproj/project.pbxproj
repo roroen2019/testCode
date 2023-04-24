@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D102094729F60E5A0017D124 /* LifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102094629F60E5A0017D124 /* LifeCycleViewController.swift */; };
+		D102094A29F677710017D124 /* ShareTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102094929F677710017D124 /* ShareTest.swift */; };
 		D1ACA11529C0655F009AAA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA11429C0655F009AAA3A /* AppDelegate.swift */; };
 		D1ACA11729C0655F009AAA3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA11629C0655F009AAA3A /* SceneDelegate.swift */; };
 		D1ACA11929C0655F009AAA3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA11829C0655F009AAA3A /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		3FDF279360F712347092E14E /* Pods-testView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testView.release.xcconfig"; path = "Target Support Files/Pods-testView/Pods-testView.release.xcconfig"; sourceTree = "<group>"; };
+		D102094629F60E5A0017D124 /* LifeCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleViewController.swift; sourceTree = "<group>"; };
+		D102094929F677710017D124 /* ShareTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareTest.swift; sourceTree = "<group>"; };
 		D1859DE30792B4456F0CA636 /* Pods_testView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ACA11129C0655F009AAA3A /* testView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ACA11429C0655F009AAA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D102094829F6775F0017D124 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D102094929F677710017D124 /* ShareTest.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		D1ACA10829C0655F009AAA3A = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +154,7 @@
 		D1ACA11329C0655F009AAA3A /* testView */ = {
 			isa = PBXGroup;
 			children = (
+				D102094829F6775F0017D124 /* Common */,
 				D1F1EAC429E4E760006C0B2F /* Convert */,
 				D1ACA12B29C43E9A009AAA3A /* App */,
 				D1ACA12829C0659D009AAA3A /* CustomView */,
@@ -232,6 +245,7 @@
 				D1F5519E29DFB25C00E859FA /* GomRxSwiftViewController.swift */,
 				D1F1EAE029E7D078006C0B2F /* GomLoginViewController.swift */,
 				D1F1EAE529E920EE006C0B2F /* PreviewTestViewController.swift */,
+				D102094629F60E5A0017D124 /* LifeCycleViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,7 +387,9 @@
 				D1F5519B29DA98AF00E859FA /* Service2.swift in Sources */,
 				D1ACA11729C0655F009AAA3A /* SceneDelegate.swift in Sources */,
 				D1F1EAD329E4FF7E006C0B2F /* OneModel.swift in Sources */,
+				D102094729F60E5A0017D124 /* LifeCycleViewController.swift in Sources */,
 				D1F1EAD629E53125006C0B2F /* AdoptCollectionViewCell.swift in Sources */,
+				D102094A29F677710017D124 /* ShareTest.swift in Sources */,
 				D1F1EAC829E4F6AE006C0B2F /* OneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
