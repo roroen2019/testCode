@@ -6,7 +6,7 @@
 //
 /*
  zedd 따라하기
- https://zeddios.tistory.com/925
+ https://zeddios.tistory.com/925 11
  */
 import UIKit
 
