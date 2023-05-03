@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D102094729F60E5A0017D124 /* LifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102094629F60E5A0017D124 /* LifeCycleViewController.swift */; };
 		D102094A29F677710017D124 /* ShareTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102094929F677710017D124 /* ShareTest.swift */; };
+		D102095529FA70A70017D124 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102095429FA70A70017D124 /* CombineViewController.swift */; };
+		D10209582A009EA20017D124 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10209572A009EA20017D124 /* ApiCaller.swift */; };
+		D102095A2A0105D50017D124 /* Combine2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10209592A0105D50017D124 /* Combine2ViewController.swift */; };
 		D1ACA11529C0655F009AAA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA11429C0655F009AAA3A /* AppDelegate.swift */; };
 		D1ACA11729C0655F009AAA3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA11629C0655F009AAA3A /* SceneDelegate.swift */; };
 		D1ACA11929C0655F009AAA3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA11829C0655F009AAA3A /* ViewController.swift */; };
@@ -53,6 +56,9 @@
 		3FDF279360F712347092E14E /* Pods-testView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testView.release.xcconfig"; path = "Target Support Files/Pods-testView/Pods-testView.release.xcconfig"; sourceTree = "<group>"; };
 		D102094629F60E5A0017D124 /* LifeCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleViewController.swift; sourceTree = "<group>"; };
 		D102094929F677710017D124 /* ShareTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareTest.swift; sourceTree = "<group>"; };
+		D102095429FA70A70017D124 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		D10209572A009EA20017D124 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		D10209592A0105D50017D124 /* Combine2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine2ViewController.swift; sourceTree = "<group>"; };
 		D1859DE30792B4456F0CA636 /* Pods_testView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ACA11129C0655F009AAA3A /* testView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ACA11429C0655F009AAA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +139,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		D10209562A009E880017D124 /* APICaller */ = {
+			isa = PBXGroup;
+			children = (
+				D10209572A009EA20017D124 /* ApiCaller.swift */,
+			);
+			path = APICaller;
+			sourceTree = "<group>";
+		};
 		D1ACA10829C0655F009AAA3A = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +168,7 @@
 		D1ACA11329C0655F009AAA3A /* testView */ = {
 			isa = PBXGroup;
 			children = (
+				D10209562A009E880017D124 /* APICaller */,
 				D102094829F6775F0017D124 /* Common */,
 				D1F1EAC429E4E760006C0B2F /* Convert */,
 				D1ACA12B29C43E9A009AAA3A /* App */,
@@ -246,6 +261,8 @@
 				D1F1EAE029E7D078006C0B2F /* GomLoginViewController.swift */,
 				D1F1EAE529E920EE006C0B2F /* PreviewTestViewController.swift */,
 				D102094629F60E5A0017D124 /* LifeCycleViewController.swift */,
+				D102095429FA70A70017D124 /* CombineViewController.swift */,
+				D10209592A0105D50017D124 /* Combine2ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,12 +395,15 @@
 				D1F1EAC629E4E786006C0B2F /* OneViewController.swift in Sources */,
 				D1F5519629DA933200E859FA /* MVVM2ViewController.swift in Sources */,
 				D1F1EACA29E4F8F1006C0B2F /* OneService.swift in Sources */,
+				D102095529FA70A70017D124 /* CombineViewController.swift in Sources */,
 				D1FB238829D585210088CB0A /* IosAcademyViewController.swift in Sources */,
 				D1ACA13929C4450A009AAA3A /* Extention.swift in Sources */,
 				D1F5519929DA953A00E859FA /* ViewModel2.swift in Sources */,
 				D1F5519D29DA98D700E859FA /* Model2.swift in Sources */,
 				D1F1EACC29E4F926006C0B2F /* OneAPI.swift in Sources */,
 				D1FB238529D12F500088CB0A /* RxSwiftViewController.swift in Sources */,
+				D102095A2A0105D50017D124 /* Combine2ViewController.swift in Sources */,
+				D10209582A009EA20017D124 /* ApiCaller.swift in Sources */,
 				D1F5519B29DA98AF00E859FA /* Service2.swift in Sources */,
 				D1ACA11729C0655F009AAA3A /* SceneDelegate.swift in Sources */,
 				D1F1EAD329E4FF7E006C0B2F /* OneModel.swift in Sources */,

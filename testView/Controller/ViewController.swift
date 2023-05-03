@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     
     // 셀 제목
-    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간", "레거시->mvvm변경", "lifeCycle테스트"]
+    private let cellTitle = ["mvvm", "그림자, 레이어", "rxSwift", "mvvm2", "rx 4시간", "레거시->mvvm변경", "lifeCycle테스트", "combine테스트", "combine2테스트"]
     
     // 테이블뷰
     private let mainTableView: UITableView = {
@@ -95,6 +95,10 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             viewController = OneViewController()
         case 6:
             viewController = LifeCycleViewController()
+        case 7:
+            viewController = CombineViewController()
+        case 8:
+            viewController = Combine2ViewController()
         default:
             return
         }
