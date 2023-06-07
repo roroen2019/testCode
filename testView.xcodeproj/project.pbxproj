@@ -26,6 +26,7 @@
 		D1ACA13529C4415F009AAA3A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA13429C4415F009AAA3A /* ViewModel.swift */; };
 		D1ACA13729C442B7009AAA3A /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA13629C442B7009AAA3A /* MVVMViewController.swift */; };
 		D1ACA13929C4450A009AAA3A /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACA13829C4450A009AAA3A /* Extention.swift */; };
+		D1EE52EB2A3015A300B80440 /* MVVM3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE52EA2A3015A300B80440 /* MVVM3ViewController.swift */; };
 		D1F1EAC629E4E786006C0B2F /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAC529E4E786006C0B2F /* OneViewController.swift */; };
 		D1F1EAC829E4F6AE006C0B2F /* OneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAC729E4F6AE006C0B2F /* OneViewModel.swift */; };
 		D1F1EACA29E4F8F1006C0B2F /* OneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1EAC929E4F8F1006C0B2F /* OneService.swift */; };
@@ -77,6 +78,7 @@
 		D1ACA13629C442B7009AAA3A /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		D1ACA13829C4450A009AAA3A /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		D1E41DD7594D112395052501 /* Pods-testView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testView.debug.xcconfig"; path = "Target Support Files/Pods-testView/Pods-testView.debug.xcconfig"; sourceTree = "<group>"; };
+		D1EE52EA2A3015A300B80440 /* MVVM3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM3ViewController.swift; sourceTree = "<group>"; };
 		D1F1EAC529E4E786006C0B2F /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		D1F1EAC729E4F6AE006C0B2F /* OneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewModel.swift; sourceTree = "<group>"; };
 		D1F1EAC929E4F8F1006C0B2F /* OneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneService.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				D102094629F60E5A0017D124 /* LifeCycleViewController.swift */,
 				D102095429FA70A70017D124 /* CombineViewController.swift */,
 				D10209592A0105D50017D124 /* Combine2ViewController.swift */,
+				D1EE52EA2A3015A300B80440 /* MVVM3ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1ACA13129C440EF009AAA3A /* Model.swift in Sources */,
+				D1EE52EB2A3015A300B80440 /* MVVM3ViewController.swift in Sources */,
 				D1F9B0AE29C9734D007D4CBD /* nomalTableViewCell.swift in Sources */,
 				D1ACA13529C4415F009AAA3A /* ViewModel.swift in Sources */,
 				D1ACA11929C0655F009AAA3A /* ViewController.swift in Sources */,
